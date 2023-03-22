@@ -1,0 +1,8 @@
+// estilos de base y generales
+@import './base/variables.scss';
+@import './base/extend.scss';
+
+// estilos de components accesories y especificos
+@import './components/navbar';
+@import './components/footer';
+

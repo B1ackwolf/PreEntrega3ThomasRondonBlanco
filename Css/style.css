@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Evogria;
+  src: url(../Assets/Fonts/Evogria/Evogria.otf);
+}
+@font-face {
+  font-family: Evogria-Italic;
+  src: url(../Assets/Fonts/Evogria/Evogria-Italic.otf);
+}
+@font-face {
+  font-family: Long-Shot;
+  src: url(../Assets/Fonts/LongShot/Long_Shot.ttf);
+}
+.titulosMuyImportantes {
+  color: white;
+  font-family: Long-shot;
+  font-weight: 100px;
+  font-size: 85px;
+}
+
+.titulosImportantes {
+  color: white;
+  font-family: Long-shot;
+  font-weight: 100px;
+  font-size: 35px;
+}
+
+.subtituloIndex {
+  color: white;
+  font-family: Evogria-Italic;
+  font-weight: 300px;
+  font-size: 200px;
+}
+
+.subtitulosDestacados {
+  color: rgb(37, 190, 245);
+  font-family: Evogria-Italic;
+  font-weight: 100px;
+  font-size: 25px;
+}
+
+.textosComunes {
+  color: white;
+  font-family: Evogria;
+  font-weight: 20px;
+}
+
+.listaNoticias a {
+  font-family: Evogria;
+  text-decoration: none;
+}
+
+.fotosStaff {
+  border-radius: 50%;
+}
+
+.nombresStaff {
+  background-color: rgb(255, 203, 47);
+  color: black;
+  display: inline-block;
+  font-style: italic;
+  border-radius: 3%;
+  padding: 5px 10px;
+  transform: skewX(-15deg);
+}
+
+/* Imagen para mi fondo de pagina */
+body {
+  background-image: url(../Assets/background.png);
+  background-size: contain;
+}
+
+main ul li {
+  list-style-type: circle;
+  margin: 0px 0px 0px 40px;
+  color: white;
+  font-family: Evogria;
+  font-weight: 5px;
+}
+main ul li a {
+  text-decoration: none;
+  list-style: none;
+}
+
+p {
+  color: white;
+  font-family: Evogria;
+  font-weight: 10px;
+}
+
+footer p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarJdarg {
+  background-color: rgb(37, 190, 245);
+  font-family: long-shot;
+  font-weight: 300px;
+  letter-spacing: 0.2px;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  padding: 10px;
+}
+
+.btnNavbarJdarg {
+  background-color: rgb(37, 190, 245);
+}
+
+.btnNavbarJdarg:hover {
+  background-color: rgb(46, 58, 114);
+  border-radius: 4%;
+  transition: all 0.8s;
+  color: white;
+}
+
+/* estilo para footer */
+/* aun no me decido por cual de estos colores queda mejor :c */
+footer {
+  /* background-color: rgba(46, 58, 114, 1); azul marino*/
+  /* background-color: rgba(37, 190, 245, 1); turquesa*/
+  /* background-color: rgba(167, 86, 17, 1); dorado oscuro*/
+  background-color: rgb(255, 203, 47);
+}
+
+footer p {
+  color: black;
+  font-family: Evogria;
+}
+
+/*# sourceMappingURL=style.css.map */

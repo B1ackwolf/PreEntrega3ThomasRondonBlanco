@@ -1,0 +1,14 @@
+/* estilo para footer */ 
+/* aun no me decido por cual de estos colores queda mejor :c */
+footer{
+    /* background-color: rgba(46, 58, 114, 1); azul marino*/
+    /* background-color: rgba(37, 190, 245, 1); turquesa*/
+    /* background-color: rgba(167, 86, 17, 1); dorado oscuro*/
+    background-color: rgba(255, 203, 47, 1);
+}
+footer p{
+    color: black;
+    font-family: Evogria;
+    // font-size: 40px;
+    @extend %dflex;
+}

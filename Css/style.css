@@ -50,7 +50,7 @@
 }
 
 .fotosStaff {
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .nombresStaff {
@@ -87,7 +87,7 @@ p {
   font-weight: 10px;
 }
 
-footer p {
+footer p, .navbarJdarg {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -12,111 +12,167 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../Css/style.css">
 </head>
-
+<!-- --- -->
 <body>
     <!-- Aqui empieza el header y navBar -->
     <header>
       <nav class="navbar navbar-expand-lg navbarJdarg">
         <div class="container-fluid ">
         <a class="navbar-brand"></a>
-       <img src="../Assets/logotipo11.png" alt="Logo" width="120" height="81" class="d-inline-block align-text-top">
+        <img src="../Assets/logotipo11.png" alt="Logo" width="120" height="81" class="d-inline-block align-text-top">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link btnNavbarJdarg" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link btnNavbarJdarg" href="../Pages/comunidad.html">Comunidad</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link btnNavbarJdarg" href="../Pages/novedades.html">Novedades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link btnNavbarJdarg" href="../Pages/staff.html">Staff</a>
-                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link btnNavbarJdarg" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btnNavbarJdarg" href="../Pages/comunidad.html">Comunidad</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btnNavbarJdarg" href="../Pages/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btnNavbarJdarg" href="../Pages/staff.html">Staff</a>
+                    </li>
                 </ul>
               </div>
-            </div>
-          </nav>
+          </div>
+        </nav>
     </header>
     <!-- Aqui termina el header y navBar -->
 
-    <!-- Aqui empieza el main -->
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <h2 class="titulosMuyImportantes text-center d-flex justify-content-center align-items-center m-2 pt-5">
-                    PROXIMOS EVENTOS
-                </h2>
-                <img src="../Assets/foto_dummy_calendario.png" class="img-fluid" alt="Calendario con futuros eventos proximos para la comunidad"> 
-                <!-- por ahora me toca maquetar con dummy, luego remplazaerlo por un iframe con calendario correctamente manejado, sigo sin aprender como, ojito, recordar investigar, datepicker no hace las funciones que necesito,
-                https://mdbootstrap.com/docs/standard/plugins/calendar/ es lo mas parecido, pero es pago, seguir investigando -->
-            </div>
+    <!-- Aqui empieza el contenido del body -->
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center">
+            <h2 class="titulosMuyImportantes text-center d-flex justify-content-center align-items-center m-2 pt-5">
+                PROXIMOS EVENTOS
+            </h2>
         </div>
-    </main>
-    <!-- Aqui termina el main -->
+    </div>
+
+    <!-- Aqui empieza el calendario -->
+    <!-- Para obtener un mejor calendario que sea mas reactivo/automatico y se actualice solo necesitaria hacerlo con java-script,pero eso esta fuera de mi alcance, me toca conformarme con uno en html y scss , en teoria modificarlo manual cada mes-->
+    <div class="month titulosMuyImportantes">      
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>
+          ABRIL<br>
+          <span>2023</span>
+        </li>
+      </ul>
+    </div>
+    
+    <ul class="weekdays titulosImportantes">
+      <li>Sa</li>
+      <li>Do</li>
+      <li>Lu</li>
+      <li>Ma</li>
+      <li>Mi</li>
+      <li>Ju</li>
+      <li>Vi</li>
+    </ul>
+    
+    <ul class="days titulosImportantes">  
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li><span class="active"><a href="https://www.instagram.com/p/Cqnp0luu_0f/" target="_blank">7</a></span></li>
+      <li><span class="active"><a href="https://www.instagram.com/p/Cqnp0luu_0f/" target="_blank">8</a></span></li>
+      <li><span class="active"><a href="https://www.instagram.com/p/Cqnp0luu_0f/" target="_blank">9</a></span></li>
+      <li>11</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <!-- <li>31</li> -->
+      <!--desactivar y activar segun los dias del mes  -->
+    </ul>
+    <!-- Aqui termina el calendario -->
 
     <!-- Aqui empieza el section1 con links a noticias adicionales -->
-    <!-- aqui va todo el acordeon -->
     <section class="container-fluid">
-        <article class="row">
-            <div class="accordion accordion-flush m-2 p-3" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <!-- ojito, color rompe retinas, luego aprender a modificarlo al mismo tono de mi paleta de colores -->
-                    <button class="accordion-button collapsed bg-info " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <h3 class="titulosMuyImportantes">
-                            EVENTOS ANTERIORES 
-                        </h3>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <ul class="listaNoticias">
-                            <!-- cada uno de estos links llevarian a un post de alguna red social donde se muestre mas info, para asegurar interactividad con nuestras redes sociales -->
-                            <li><a href="https://www.instagram.com/p/Cpgbeo-MX9O/" target="_blank">JD-ARG Te invita a la KStyle! Torneos, actividades y toda la mejor onda, aca!</a></li>
-                            <li><a href="https://www.instagram.com/p/Cl4TQL3uzQJ/" target="_blank">G-BUNKER y J-DARG los invitan a la G-DANCE CUP Navidad Veraniega </a></li>
-                            <li><a href="https://www.instagram.com/p/CkKGjNks_cj/" target="_blank">Juntada por Halloween y cumpleaños de la comunidad 2022</a></li>
-                            <li><a href="https://www.instagram.com/p/Cj-5Z-Vj4dd/" target="_blank">ARGENTINA GAME SHOW edicion Primavera 2022</a></li>
-                            <li><a href="https://www.instagram.com/p/CixTcR2OCsp/" target="_blank"> ARTE COSPLAY: Just Dance en Tecnopolis!</a></li>
-                        </ul>
-                    </div>
+      <article class="row d-flex justify-content-center align-items-center">
+          <div class="accordion accordion-flush m-2 p-3" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed bg-info " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <h3 class="titulosMuyImportantes">
+                          EVENTOS ANTERIORES 
+                      </h3>
+                  </button>
+                </h2>
+                <!-- aqui va todo el acordeon -->
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <ul class="listaNoticias">
+                          <!-- cada uno de estos links llevarian a un post de alguna red social donde se muestre mas info, para asegurar interactividad con nuestras redes sociales -->
+                          <li><a href="https://www.instagram.com/p/Cpgbeo-MX9O/" target="_blank">JD-ARG Te invita a la KStyle! Torneos, actividades y toda la mejor onda, acá!</a></li>
+                          <li><a href="https://www.instagram.com/p/Cl4TQL3uzQJ/" target="_blank">G-BUNKER y J-DARG los invitan a la G-DANCE CUP Navidad Veraniega </a></li>
+                          <li><a href="https://www.instagram.com/p/CkKGjNks_cj/" target="_blank">Juntada por Halloween y cumpleaños de la comunidad 2022</a></li>
+                          <li><a href="https://www.instagram.com/p/Cj-5Z-Vj4dd/" target="_blank">ARGENTINA GAME SHOW edición Primavera 2022</a></li>
+                          <li><a href="https://www.instagram.com/p/CixTcR2OCsp/" target="_blank"> ARTE COSPLAY: Just Dance en Tecnopolis!</a></li>
+                      </ul>
                   </div>
                 </div>
+                <!-- aqui va todo el acordeon -->
               </div>
+            </div>
         </article>
-    </section>
+      </section>
     <!-- Aqui termina el section1 de noticias adicionales -->
 
-    <!-- Importante, scripts de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-
-<footer>
-  <div class="container-fluid mt-3 p-3">
-      <div class="row">
-          <div class="col-lg-2 col-5 d-flex justify-content-center align-items-center">
-              <img src="../Assets/fav_icon_alt.png" class="img-fluid" alt="logotipo alternativo Just Dance Argentina monocromatico en azul marino">
-          </div>
-          <div class="col-lg-6 col-7">
-              <p class="text-center">
-                  just dance arg is not endorsed by, directly affiliated with, maintained or sponsored by ubisoft, Microsoft, Xbox, Sony, Playstation or nintendo switch. All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners.
-              </p>
-          </div>
-          <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
-            <a href="https://www.instagram.com/justdance_arg/" class="m-1" target="_blank"><img src="../Assets/instagram.png" alt="Enlace al Instagram de la comunidad Just Dance Argentina"></a>
-            <a href="https://www.facebook.com/justdanceargentina/" class="m-1" target="_blank"><img src="../Assets/facebook.png" alt="Enlace al Facebook de la comunidad Just Dance Argentina"></a>
-            <a href="https://www.tiktok.com/@justdance_arg" class="m-1" target="_blank"><img src="../Assets/tiktok.png" alt="Enlace al TikTok de la comunidad Just Dance Argentina"></a>
-            <a href="https://twitter.com/JustDance_ARG" class="m-1" target="_blank"><img src="../Assets/twitter.png" alt="Enlace al Twitter de la comunidad Just Dance Argentina"></a>
-            <a href="https://www.twitch.tv/justdance_arg" class="m-1" target="_blank"><img src="../Assets/twitch.png" alt="Enlace al Twitch de la comunidad Just Dance Argentina"></a>
-            <a href="https://www.youtube.com/@JustDanceArgentina" class="m-1" target="_blank"><img src="../Assets/youtube.png" alt="Redes sociales de la comunidad"></a>
+    <!-- aqui empieza el footer -->
+    <footer>
+      <div class="container-fluid mt-3 p-3">
+          <div class="row d-flex justify-content-center align-items-centerw">
+              <div class="col-lg-2 col-5 d-flex justify-content-center align-items-center">
+                  <img src="../Assets/fav_icon_alt.png" class="img-fluid" alt="logotipo alternativo Just Dance Argentina monocromatico en azul marino">
+              </div>
+              <div class="col-lg-6 col-7">
+                  <p class="text-center">
+                    Just Dance Arg no está respaldado, afiliado directamente, mantenido o patrocinado por ubisoft, Microsoft, Xbox, Sony, Playstation o nintendo switch. Todo el contenido, los títulos de los juegos, los nombres comerciales y/o la imagen comercial, las marcas comerciales, las ilustraciones y las imágenes asociadas son marcas comerciales y/o material protegido por derechos de autor de sus respectivos propietarios.
+                  </p>
+              </div>
+              <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+                <a href="https://www.instagram.com/justdance_arg/" class="m-1" target="_blank"><img src="../Assets/instagram.png" alt="Enlace al Instagram de la comunidad Just Dance Argentina"></a>
+                <a href="https://www.facebook.com/justdanceargentina/" class="m-1" target="_blank"><img src="../Assets/facebook.png" alt="Enlace al Facebook de la comunidad Just Dance Argentina"></a>
+                <a href="https://www.tiktok.com/@justdance_arg" class="m-1" target="_blank"><img src="../Assets/tiktok.png" alt="Enlace al TikTok de la comunidad Just Dance Argentina"></a>
+                <a href="https://twitter.com/JustDance_ARG" class="m-1" target="_blank"><img src="../Assets/twitter.png" alt="Enlace al Twitter de la comunidad Just Dance Argentina"></a>
+                <a href="https://www.twitch.tv/justdance_arg" class="m-1" target="_blank"><img src="../Assets/twitch.png" alt="Enlace al Twitch de la comunidad Just Dance Argentina"></a>
+                <a href="https://www.youtube.com/@JustDanceArgentina" class="m-1" target="_blank"><img src="../Assets/youtube.png" alt="Redes sociales de la comunidad"></a>
+              </div>
           </div>
       </div>
-  </div>
-</footer>
+    </footer>
+    <!-- aqui termina el footer -->
+
+    <!-- Importante, scripts de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+</body>
+<!-- --- -->
 </html>

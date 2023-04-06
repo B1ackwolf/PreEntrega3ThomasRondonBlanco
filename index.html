@@ -11,10 +11,9 @@
 	<!-- bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<!-- css -->
-	<link rel="stylesheet" href="./CSS/style.css">	
-
+	<link rel="stylesheet" href="./Css/style.css">	
 </head>
-
+<!-- --- -->
 <body>
 	<!-- Aqui empieza el header y navBar -->
 	<header>
@@ -42,88 +41,177 @@
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
 	</header>
 	<!-- Aqui termina el header y navBar -->
 	
 	<!-- Aqui empieza el Main -->
 	<main>
-		<div class="container-fluid">
+		<!-- Aqui van los elementos artisticos del index -->
+		<section class="container-fluid">
 			<div class="row d-flex justify-content-center align-items-center">
+				<!-- aqui va el escudo de la comunidad -->
 				<div class="col-lg-4 col-4 m-1 p-1">
 					<img src="./Assets/logotipo1.png" class="img-fluid" alt="logotipo de la comunidad just dance argentina un sol dorado sobre un escudo azul y turquesa con escritura en letras blancas ">
 					<!-- ojito. conseguir foto de tamaño reducido sin perder calidad, recordar luego -->
 				</div>
+			<!-- aqui termina el codigo del escudo de la comunidad -->
+
+			<!-- aqui empieza el lema de la comunidad -->
 				<div class="col-lg-8 col-8 text-center subtituloIndex m-1 p-1">
 					<h2>
 						Just Dance Argentina
 					</h2>
 					<h3>
-						Comunidad de Fans, para fans
+						Comunidad de Fans para fans
 					</h3>
 				</div>
+			<!-- aqui termina el lema de la comunidad -->
+
+			<!-- aqui empieza video de presentacion de la comunidad -->
 				<iframe width="700" height="700" class="d-flex justify-content-center align-items-center my-2 py-2 px-5" src="https://www.youtube.com/embed/i_MqlJ2pB0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				<div class="mt-2 p-3">
-					<h2 class="titulosImportantes ms-4 pb-2">
-						QUIENES SOMOS?
-					</h2>
-					<p>
-						Descubre mas <a href="./Pages/comunidad.html">Aqui!</a>
-					</p>
-				</div>
-				<div class="mt-2 p-3">
-					<h2 class="titulosImportantes ms-4 pb-2">
-						QUE HAY DE NUEVO? 
-					</h2>
-					<p>
-						Enterate de todas las novedades y noticias de la comunidad <a href="./Pages/novedades.html">aca!</a>
-					</p>
-				</div>
-				<div class="mt-2 p-3">
-					<h2 class="titulosImportantes ms-4 pb-2">
-						CON GANAS DE MAS?
-					</h2>
-					<p>
-						Descubre cuales seran los proximos eventos donde diremos <a href="./Pages/eventos.html">presente!</a>
-					</p>
-				</div>
-				<div class="mt-2 p-3">
-					<h2 class="titulosImportantes ms-4 pb-2">
-						DESEAS CONOCERNOS?
-					</h2> 
-					<p>
-						Si quieres formar parte del staff o te interesaria contar con nosotros para un evento, contactanos <a href="./Pages/Staff.html">aqui!</a>
-					</p>
-				</div>
+				 <!-- NOTA: los chicos no alcanzaron a terminar el video,en cambio se usa el momento mas importante donde la comunidad estuvo presente y donde se ganaron reconocimiento oficial -->
+			<!-- aqui termina el video de presentacion de la comunidad -->
 			</div>
-		</div>
+		</section>
+		<!-- aqui terminan los elementos artisticos del index -->
+
+		<!-- Elementos con animaciones para los links a las distintas paginas de la comunidad -->
+		<section class="container-fluid">
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="container__card col-lg-4 col-5 ">
+
+					<!--Card y Link n°1 -->
+					<div class="card__father">
+						<div class="card">
+							<div class="card__front">
+								<div class="bg"></div>
+								<div class="body__card_front">
+									<h3 class="titulosImportantes ms-4 pb-2">
+										Quienes somos?
+									</h3>
+								</div>
+							</div>
+							<div class="card__back">
+								<div class="body__card_back">
+									<p>
+										Descubre todo sobre nosotros
+									</p>
+									<a class="subtituloIndex btn_card" href="./Pages/comunidad.html" class="card-link">
+										¡AQUI!
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Card y Link n°2 -->
+					<div class="card__father">
+						<div class="card">
+							<div class="card__front">
+								<div class="bg"></div>
+								<div class="body__card_front mt-2 p-3">
+									<h3 class="titulosImportantes ms-4 pb-2">
+										Quieres saber las ultimas noticias de la comunidad?
+									</h3>
+								</div>
+							</div>
+							<div class="card__back">
+								<div class="body__card_back">
+									<p>
+										Entérate de todas las novedaves
+									</p>
+									<a class="subtituloIndex btn_card" href="./Pages/eventos.html" class="card-link">
+										¡ACA!
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Card y Link n°3 -->
+					<div class="card__father">
+						<div class="card">
+							<div class="card__front">
+								<div class="bg"></div>
+								<div class="body__card_front">
+									<h3 class="titulosImportantes ms-4 pb-2">
+										Tienes ganas de mas?
+									</h3>
+								</div>
+							</div>
+							<div class="card__back">
+								<div class="body__card_back">
+									<p>
+										Descubre cuáles serán los proximos eventos donde diremos
+									</p>
+									<a class="subtituloIndex btn_card" href="./Pages/eventos.html" class="card-link">
+										¡PRESENTE!
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Card y Link n°4 -->
+					<div class="card__father">
+						<div class="card">
+							<div class="card__front">
+								<div class="bg"></div>
+								<div class="body__card_front">
+									<h3 class="titulosImportantes ms-4 pb-2">
+										Quieres conocernos?
+									</h3>
+								</div>
+							</div>
+							<div class="card__back">
+								<div class="body__card_back">
+									<p>
+										Si quieres saber quienes forman parte del equipo o quieres saber como formar parte o deseas contar con nosotros en un evento
+									</p>
+									<a class="subtituloIndex btn_card" href="./Pages/eventos.html" class="card-link">
+										¡CONTACTANOS!
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Final de cards y links -->
+
+				</div>			
+			</div>
+		</section>
+		<!-- aqui terminan los elementos con animaciones para los links a las paginas de la comunidad -->
 	</main>	
 	<!-- Aqui termina el main -->
 
+	<!-- Aqui empieza el footer -->
+	<footer>
+		<div class="container-fluid mt-3 p-3">
+			<div class="row">
+				<div class="col-lg-2 col-5 d-flex justify-content-center align-items-center">
+					<img src="./Assets/fav_icon_alt.png" class="img-fluid" alt="logotipo alternativo Just Dance Argentina monocromatico en azul marino">
+				</div>
+				<div class="col-lg-6 col-7">
+					<p class="text-center">
+						Just Dance Arg no está respaldado, afiliado directamente, mantenido o patrocinado por ubisoft, Microsoft, Xbox, Sony, Playstation o nintendo switch. Todo el contenido, los títulos de los juegos, los nombres comerciales y/o la imagen comercial, las marcas comerciales, las ilustraciones y las imágenes asociadas son marcas comerciales y/o material protegido por derechos de autor de sus respectivos propietarios.
+					</p>
+				</div>
+				<div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+					<a href="https://www.instagram.com/justdance_arg/" class="m-1" target="_blank"><img src="./Assets/instagram.png" alt="Enlace al Instagram de la comunidad Just Dance Argentina"></a>
+					<a href="https://www.facebook.com/justdanceargentina/" class="m-1" target="_blank"><img src="./Assets/facebook.png" alt="Enlace al Facebook de la comunidad Just Dance Argentina"></a>
+					<a href="https://www.tiktok.com/@justdance_arg" class="m-1" target="_blank"><img src="./Assets/tiktok.png" alt="Enlace al TikTok de la comunidad Just Dance Argentina"></a>
+					<a href="https://twitter.com/JustDance_ARG" class="m-1" target="_blank"><img src="./Assets/twitter.png" alt="Enlace al Twitter de la comunidad Just Dance Argentina"></a>
+					<a href="https://www.twitch.tv/justdance_arg" class="m-1" target="_blank"><img src="./Assets/twitch.png" alt="Enlace al Twitch de la comunidad Just Dance Argentina"></a>
+					<a href="https://www.youtube.com/@JustDanceArgentina" class="m-1" target="_blank"><img src="./Assets/youtube.png" alt="Enlace al Youtube de la comunidad Just Dance Argentina"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- aqui termina el footer -->
+
 	<!-- Importante, scripts de bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<!-- --- -->
 </body>
-
-<footer>
-    <div class="container-fluid mt-3 p-3">
-        <div class="row">
-            <div class="col-lg-2 col-5 d-flex justify-content-center align-items-center">
-                <img src="./Assets/fav_icon_alt.png" class="img-fluid" alt="logotipo alternativo Just Dance Argentina monocromatico en azul marino">
-            </div>
-            <div class="col-lg-6 col-7">
-                <p class="text-center">
-                    just dance arg is not endorsed by, directly affiliated with, maintained or sponsored by ubisoft, Microsoft, Xbox, Sony, Playstation or nintendo switch. All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners.
-                </p>
-            </div>
-            <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
-                <a href="https://www.instagram.com/justdance_arg/" class="m-1" target="_blank"><img src="./Assets/instagram.png" alt="Enlace al Instagram de la comunidad Just Dance Argentina"></a>
-                <a href="https://www.facebook.com/justdanceargentina/" class="m-1" target="_blank"><img src="./Assets/facebook.png" alt="Enlace al Facebook de la comunidad Just Dance Argentina"></a>
-                <a href="https://www.tiktok.com/@justdance_arg" class="m-1" target="_blank"><img src="./Assets/tiktok.png" alt="Enlace al TikTok de la comunidad Just Dance Argentina"></a>
-                <a href="https://twitter.com/JustDance_ARG" class="m-1" target="_blank"><img src="./Assets/twitter.png" alt="Enlace al Twitter de la comunidad Just Dance Argentina"></a>
-                <a href="https://www.twitch.tv/justdance_arg" class="m-1" target="_blank"><img src="./Assets/twitch.png" alt="Enlace al Twitch de la comunidad Just Dance Argentina"></a>
-                <a href="https://www.youtube.com/@JustDanceArgentina" class="m-1" target="_blank"><img src="./Assets/youtube.png" alt="Enlace al Youtube de la comunidad Just Dance Argentina"></a>
-            </div>
-        </div>
-    </div>
-</footer>
 </html> 

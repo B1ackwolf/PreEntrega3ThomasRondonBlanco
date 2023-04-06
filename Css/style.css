@@ -1,3 +1,19 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/* Fonts Personalizados , recordatorio, caracteres especiales como la "¿" o las letras con acento generan errores,ignorar errores ortograficos en titulos importantes o convencer a los chicos de que cambien de fuente */
 @font-face {
   font-family: Evogria;
   src: url(../Assets/Fonts/Evogria/Evogria.otf);
@@ -10,38 +26,41 @@
   font-family: Long-Shot;
   src: url(../Assets/Fonts/LongShot/Long_Shot.ttf);
 }
+/* clases personalizadas */
 .titulosMuyImportantes {
   color: white;
   font-family: Long-shot;
-  font-weight: 100px;
+  font-weight: bold;
   font-size: 85px;
 }
 
 .titulosImportantes {
   color: white;
   font-family: Long-shot;
-  font-weight: 100px;
+  font-weight: normal;
   font-size: 35px;
 }
 
 .subtituloIndex {
   color: white;
   font-family: Evogria-Italic;
-  font-weight: 300px;
-  font-size: 200px;
+  font-weight: normal;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .subtitulosDestacados {
   color: rgb(37, 190, 245);
   font-family: Evogria-Italic;
-  font-weight: 100px;
+  font-weight: bold;
   font-size: 25px;
 }
 
 .textosComunes {
   color: white;
   font-family: Evogria;
-  font-weight: 20px;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .listaNoticias a {
@@ -63,6 +82,7 @@
   transform: skewX(-15deg);
 }
 
+/* Variables generales */
 /* Imagen para mi fondo de pagina */
 body {
   background-image: url(../Assets/background.png);
@@ -71,10 +91,10 @@ body {
 
 main ul li {
   list-style-type: circle;
-  margin: 0px 0px 0px 40px;
+  margin: 0 0 0 40px;
   color: white;
   font-family: Evogria;
-  font-weight: 5px;
+  font-weight: normal;
 }
 main ul li a {
   text-decoration: none;
@@ -84,15 +104,182 @@ main ul li a {
 p {
   color: white;
   font-family: Evogria;
-  font-weight: 10px;
+  font-weight: normal;
 }
 
-footer p, .navbarJdarg {
+.navbarJdarg, footer p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.month {
+  padding: 30px 25px;
+  width: 100%;
+  background: rgb(46, 58, 114);
+  text-align: center;
+}
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+.month ul li {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+.days li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #777;
+}
+.days li.active {
+  padding: 15px;
+  text-decoration: none;
+  background: rgb(37, 190, 245);
+  color: white !important;
+}
+.days li a {
+  text-decoration: none;
+}
+
+/* media querys para distintos tamaños */
+@media screen and (max-width: 720px) {
+  .weekdays li, .days li {
+    width: 13.1%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {
+    width: 12.5%;
+  }
+  .weekdays li.active, .days li.active {
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {
+    width: 12.2%;
+  }
+}
+.container__card {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  perspective: 1000px;
+}
+.container__card .card__father {
+  margin: 5px;
+  perspective: 1000px;
+}
+.container__card .card__father:hover .card {
+  transform: rotateY(180deg);
+}
+.container__card .card__father .card {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+}
+.container__card .card__father .card .card__front {
+  background-size: cover;
+  background-position: center;
+}
+.container__card .card__father .card .card__front,
+.container__card .card__father .card .card__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+.container__card .card__father .card .card__back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to left, #6fb1fc, #8cbdf6);
+}
+.container__card .card__father .card .body__card_front {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: translateZ(60px);
+}
+.container__card .card__father .card .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, #4364f7, #6fb1fc);
+  border-radius: 20px;
+}
+.container__card .card__father .card .body__card_back {
+  padding: 40px;
+  text-align: center;
+  transform: translateZ(60px);
+}
+.container__card .card__father .card .body__card_back p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.container__card .card__father .card .btn_card:hover {
+  color: rgb(255, 203, 47);
+  border-radius: 4%;
+  transition: all 0.6s;
+}
+
+/* estilos para footer */
+/* tengo 4 colores alternativos, los tengo anotados para no perder los valores rgb*/
+footer {
+  /* background-color: rgba(46, 58, 114, 1); azul marino*/
+  /* background-color: rgba(37, 190, 245, 1); turquesa*/
+  /* background-color: rgba(167, 86, 17, 1); dorado oscuro*/
+  background-color: rgb(255, 203, 47);
+}
+
+footer p {
+  color: black;
+  font-family: Evogria;
 }
 
 .navbarJdarg {
@@ -115,20 +302,6 @@ footer p, .navbarJdarg {
   border-radius: 4%;
   transition: all 0.8s;
   color: white;
-}
-
-/* estilo para footer */
-/* aun no me decido por cual de estos colores queda mejor :c */
-footer {
-  /* background-color: rgba(46, 58, 114, 1); azul marino*/
-  /* background-color: rgba(37, 190, 245, 1); turquesa*/
-  /* background-color: rgba(167, 86, 17, 1); dorado oscuro*/
-  background-color: rgb(255, 203, 47);
-}
-
-footer p {
-  color: black;
-  font-family: Evogria;
 }
 
 /*# sourceMappingURL=style.css.map */

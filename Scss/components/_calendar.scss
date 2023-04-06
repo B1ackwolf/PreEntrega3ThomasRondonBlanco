@@ -1,0 +1,92 @@
+// Calendario personalizado
+  .month {
+    padding: 30px 25px;
+    width: 100%;
+    background: rgba(46, 58, 114, 1);
+    text-align: center;
+  
+    ul {
+      margin: 0;
+      padding: 0;
+  
+      li {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
+  
+    .prev {
+      float: left;
+      padding-top: 10px;
+    }
+  
+    .next {
+      float: right;
+      padding-top: 10px;
+    }
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  
+    li {
+      display: inline-block;
+      width: 13.6%;
+      color: #666;
+      text-align: center;
+    }
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  
+    li {
+      list-style-type: none;
+      text-decoration: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 5px;
+      color: #777;
+  
+      &.active {
+        padding: 15px;
+        text-decoration: none;
+        background: rgba(37, 190, 245, 1);
+        color: white !important;
+      }
+  
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  /* media querys para distintos tamaños */
+  @media screen and (max-width:720px) {
+    .weekdays li, .days li {
+      width: 13.1%;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {
+      width: 12.5%;
+  
+      &.active {
+        padding: 2px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {
+      width: 12.2%;
+    }
+  }
+  

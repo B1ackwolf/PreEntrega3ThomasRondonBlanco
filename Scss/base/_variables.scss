@@ -1,95 +1,119 @@
-// Fonts Personalizados
-@font-face {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
+    font-family: Verdana, sans-serif;
+  }
+  
+  /* Fonts Personalizados , recordatorio, caracteres especiales como la "¿" o las letras con acento generan errores,ignorar errores ortograficos en titulos importantes o convencer a los chicos de que cambien de fuente */
+  
+  @font-face {
     font-family: Evogria;
     src: url(../Assets/Fonts/Evogria/Evogria.otf);
-}
-@font-face {
+  }
+  
+  @font-face {
     font-family: Evogria-Italic;
     src: url(../Assets/Fonts/Evogria/Evogria-Italic.otf);
-}
-@font-face {
+  }
+  
+  @font-face {
     font-family: Long-Shot;
     src: url(../Assets/Fonts/LongShot/Long_Shot.ttf);
-}
-// Finalizan mis fonts personalizados
-
-// clases personalizadas
-
- .titulosMuyImportantes{
-     color: white;
-     font-family: Long-shot;
-     font-weight: 100px;
-     font-size: 85px;
- }
- .titulosImportantes{
-     color: white;
-     font-family: Long-shot;
-     font-weight: 100px;
-     font-size: 35px;
- }
-.subtituloIndex{
+  }
+  
+  /* clases personalizadas */
+  
+  .titulosMuyImportantes {
+    color: white;
+    font-family: Long-shot;
+    font-weight: bold;
+    font-size: 85px;
+  }
+  
+  .titulosImportantes {
+    color: white;
+    font-family: Long-shot;
+    font-weight: normal;
+    font-size: 35px;
+  }
+  
+  .subtituloIndex {
     color: white;
     font-family: Evogria-Italic;
-    font-weight: 300px;
-    font-size: 200px;
-}
-.subtitulosDestacados{
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .subtitulosDestacados {
     color: rgb(37, 190, 245);
     font-family: Evogria-Italic;
-    font-weight: 100px;
+    font-weight: bold;
     font-size: 25px;
-}
-.textosComunes{
+  }
+  
+  .textosComunes {
     color: white;
     font-family: Evogria;
-    font-weight: 20px;
-}
-
-.listaNoticias{
-    a{
-        font-family: Evogria;
-        text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  
+  .listaNoticias {
+    a {
+      font-family: Evogria;
+      text-decoration: none;
     }
-}
-
-.fotosStaff{
+  }
+  
+  .fotosStaff {
     border-radius: 10%;
-}
-
-.nombresStaff{
-    background-color:  rgba(255, 203, 47, 1);
+  }
+  
+  .nombresStaff {
+    background-color: rgba(255, 203, 47, 1);
     color: black;
     display: inline-block;
     font-style: italic;
     border-radius: 3%;
     padding: 5px 10px;
     transform: skewX(-15deg);
-}
-
-// Variables generales
-
-/* Imagen para mi fondo de pagina */
-body{
+  }
+  
+  /* Variables generales */
+  
+  /* Imagen para mi fondo de pagina */
+  body {
     background-image: url(../Assets/background.png);
     background-size: contain;
-}
-main{
-    ul{
-        li{
-            list-style-type: circle;
-            margin: 0px 0px 0px 40px;
-            color: white;
-            font-family: Evogria;
-            font-weight: 5px;
-            a{
-                text-decoration: none;
-                list-style: none;
-            }
+  }
+  
+  main {
+    ul {
+      li {
+        list-style-type: circle;
+        margin: 0 0 0 40px;
+        color: white;
+        font-family: Evogria;
+        font-weight: normal;
+        a {
+          text-decoration: none;
+          list-style: none;
         }
+      }
     }
-}
-p{
+  }
+  
+  p {
     color: white;
     font-family: Evogria;
-    font-weight: 10px;  
-}
+    font-weight: normal;
+  }
